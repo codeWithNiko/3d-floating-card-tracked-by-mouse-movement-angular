@@ -1,0 +1,49 @@
+.wrapper {
+    background: #2d809c;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+    display: flex;
+    height: 100vh;
+}
+
+.card {
+    background-image: url("../assets/images/doug-maloney-767820-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+            padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    box-shadow: 0 0 5px rgba(20, 20, 20, .6); 
+}
+
+.card:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 70%;
+    left: 0;
+    bottom: -50px;
+    box-shadow: 0px 25px 15px #1a18184d;
+}
+
+.card-content {
+    margin: auto;
+    text-align: center;
+    bottom: 20px;
+    position: absolute;
+}
+
+.info {
+    display: block;
+    -webkit-transform: translateZ(60px);
+            transform: translateZ(60px);
+    font-style: italic;
+    font-weight: bold;
+    color:white;
+}
